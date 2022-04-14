@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_03_BMI.MainPage"
+             BackgroundColor="{DynamicResource SecondaryColor}">
+    <Grid Padding="5" Background="LightSteelBlue" RowDefinitions="Auto,Auto,Auto,Auto">
+        <StackLayout >
+            <Label
+                Margin="0,15,0,5"
+                Background="Transparent"
+                TextColor="Blue"
+                >키(cm)</Label>
+            <Entry
+                x:Name="Height"
+                Background="whiteSmoke"
+                TextColor="Black"
+                                Margin="0,5,0,20"
+                ></Entry>
+            <Label
+                Margin="0,15,0,5"
+                Background="Transparent"
+                TextColor="Blue"
+            >몸무게(kg)</Label>
+            <Entry
+                x:Name="weight"
+            Background="WhiteSmoke"
+            TextColor="Black"
+                Margin="0,5,0,20"
+            ></Entry>
+            <Button
+            BackgroundColor="DeepPink"
+            Clicked="OnClear"
+            Text="Calculator"
+                Margin="0,0,0,15"
+            ></Button>
+            <Label
+            x:Name="lblbmi"
+                FontSize="30"
+                HorizontalTextAlignment="Center"
+                TextColor="Black"
+         >BMI =</Label>
+            <Label
+            x:Name="lblresult"
+                HorizontalTextAlignment="Center"
+                FontSize="200"
+                FontAttributes="Bold"
+                TextColor="Black"
+         ></Label>
+        </StackLayout>
+    </Grid>
+</ContentPage>
